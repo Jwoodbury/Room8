@@ -3,20 +3,36 @@
 using namespace std;
 
 class Member {
-	name = " ";
-	Member(int adminStatus) {
-		
-
+	
+	Member::Member(bool adminStatus) {
+		name = " ";
+		description = " ";
+		admin = false;
+		status = 0;
 	}
 
-	//void memberSettings();
-	string getDescription();
-	void setDescription(string desc);
-	void setName(string _name);
-	string getName();
-	void setStatus(int _n);
-	int getStatus();
+	string Member::getDescription() {
+		return description;
+	}
 
-	string name;
-};
+	void Member::setDescription(string desc) {
+		this->description = desc;
+	}
+
+	void Member::setName(string _name) {
+		this->name = _name;
+	}
+
+	string Member::getName() {
+		return name;
+	}
+
+	void Member::setStatus(int _n) {
+		this->status = _n;
+	}
+
+	int Member::getStatus() {
+		return status;
+	}
+}
 
